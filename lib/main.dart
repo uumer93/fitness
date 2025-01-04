@@ -11,9 +11,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      //Remove the debug banner
       debugShowCheckedModeBanner: false ,
-      home: HomePage(),
+      //Define the font family
+      theme: ThemeData(fontFamily: 'Poppins'),
+      //Set the home page
+      home: const HomePage(),
     );
   }
 }
